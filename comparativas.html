@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aplicación Básica</title>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            /* Estilos personalizados para impresión */
+            @media print {
+                /* Oculta los botones y otros elementos no deseados en la impresión */
+                .btn {
+                    display: none;
+                }
+                /* Estilos adicionales de impresión */
+                body {
+                    font-size: 12px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="house-door-fill" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+        </symbol>
+    </svg>
+
+    <div class="container my-5">
+
+
+      <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <a class="navbar-brand" href="#">Aplicación Básica</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/productos.html">Productos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/comparativas.html">Comparativa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-3 bg-body-tertiary rounded-3">
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis" href="#">
+                <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
+                <span class="visually-hidden">Home</span>
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">APP</a>
+            </li>
+            <li class="breadcrumb-item active"><a href="/comparativas.html">Comparativas</a></li>
+        </ol>
+      </nav>
+
+    </div>
+
+    <div class="container my-5">
+
+
+      <div class="p-3 row d-flex justify-content-between">
+        <div class="col-md-12">
+            
+            
+
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="tablaComparativa-tab" data-bs-toggle="tab" href="#tablaComparativa" role="tab" aria-controls="tablaComparativa" aria-selected="true">Tabla Comparativa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="opcionesPago-tab" data-bs-toggle="tab" href="#opcionesPago" role="tab" aria-controls="opcionesPago" aria-selected="false">Opciones de Pago</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="infoCompra-tab" data-bs-toggle="tab" href="#infoCompra" role="tab" aria-controls="infoCompra" aria-selected="false">Información para la Compra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="seccionCollapse-tab" data-bs-toggle="tab" href="#seccionCollapse" role="tab" aria-controls="seccionCollapse" aria-selected="false">Secciones</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabsContent">
+                    
+                    <div class="tab-pane fade show active" id="tablaComparativa" role="tabpanel" aria-labelledby="tablaComparativa-tab">
+                        
+                        <h1>Tabla Comparativa</h1>
+                        <div class="table-responsive table-container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Producto A</th>
+                                        <th>Producto B</th>
+                                        <th>Producto C</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Precio</th>
+                                        <td>$100</td>
+                                        <td>$120</td>
+                                        <td>$90</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Característica 1</th>
+                                        <td>✔</td>
+                                        <td>✔</td>
+                                        <td>✘</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Característica 2</th>
+                                        <td>✔</td>
+                                        <td>✘</td>
+                                        <td>✔</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Característica 3</th>
+                                        <td>✘</td>
+                                        <td>✔</td>
+                                        <td>✔</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="opcionesPago" role="tabpanel" aria-labelledby="opcionesPago-tab">
+                        
+                        <h1>Opciones de Pago</h1>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tarjeta de Crédito</h5>
+                                        <p class="card-text">Paga con tu tarjeta de crédito.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PayPal</h5>
+                                        <p class="card-text">Utiliza tu cuenta de PayPal para realizar el pago.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Transferencia Bancaria</h5>
+                                        <p class="card-text">Realiza una transferencia bancaria para pagar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h1>Sección de Precios con Opciones de Pago</h1>
+                        <div class="accordion" id="accordionOptions">
+                            <!-- Tarjeta de Opción 1 -->
+                            <div class="card">
+                                <div class="card-header" id="option1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOption1" aria-expanded="true" aria-controls="collapseOption1">
+                                            Tarjeta de Credito
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOption1" class="collapse show" aria-labelledby="option1" data-bs-parent="#accordionOptions">
+                                    <div class="card-body">
+                                        
+                                        
+                                        <h1>Formulario de Tarjeta de Crédito</h1>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="numeroTarjeta">Número de Tarjeta</label>
+                                                <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingresa el número de tarjeta">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="fechaVencimiento">Fecha de Vencimiento</label>
+                                                    <input type="text" class="form-control" id="fechaVencimiento" placeholder="MM/YY">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="cvv">CVV</label>
+                                                    <input type="text" class="form-control" id="cvv" placeholder="Ingresa el CVV">
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary my-2">Realizar Pago</button>
+                                        </form>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta de Opción 2 -->
+                            <div class="card">
+                                <div class="card-header" id="option2">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOption2" aria-expanded="false" aria-controls="collapseOption2">
+                                            PayPal
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOption2" class="collapse" aria-labelledby="option2" data-bs-parent="#accordionOptions">
+                                    <div class="card-body">
+                                        
+                                        
+                                        <h1>Formulario de Pago de PayPal</h1>
+                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                            <input type="hidden" name="cmd" value="_s-xclick">
+                                            <input type="hidden" name="hosted_button_id" value="TU_ID_DE_BOTON_PAYPAL">
+                                            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                                            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tarjeta de Opción 3 -->
+                            <div class="card">
+                                <div class="card-header" id="option3">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOption3" aria-expanded="false" aria-controls="collapseOption3">
+                                            Transferencia Bancaria
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOption3" class="collapse" aria-labelledby="option3" data-bs-parent="#accordionOptions">
+                                    <div class="card-body">
+                                        
+                                        
+                                        <h1>Formulario de Transferencia Bancaria</h1>
+                                        <form action="procesar_transferencia.php" method="post">
+                                            <div class="form-group">
+                                                <label for="nombre">Nombre del Beneficiario</label>
+                                                <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cuenta">Número de Cuenta del Beneficiario</label>
+                                                <input type="text" id="cuenta" name="cuenta" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="monto">Monto a Transferir</label>
+                                                <input type="number" id="monto" name="monto" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="banco">Banco Destinatario</label>
+                                                <input type="text" id="banco" name="banco" class="form-control" required>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary my-2">Realizar Transferencia</button>
+                                        </form>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="infoCompra" role="tabpanel" aria-labelledby="infoCompra-tab">
+                        
+                        <h1>Información para la Compra</h1>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Pasos para Comprar</h2>
+                                <ol>
+                                    <li>Selecciona el producto que deseas comprar.</li>
+                                    <li>Agrega el producto al carrito de compras.</li>
+                                    <li>Revisa el carrito y procede al pago.</li>
+                                    <li>Ingresa la información de envío y pago.</li>
+                                    <li>Confirma tu pedido y realiza el pago.</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Opciones de Pago</h2>
+                                <ul>
+                                    <li>Tarjeta de Crédito</li>
+                                    <li>PayPal</li>
+                                    <li>Transferencia Bancaria</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="seccionCollapse" role="tabpanel" aria-labelledby="seccionCollapse-tab">
+                        <h1>Formulario e impresion de compra</h1>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#seccion1" aria-expanded="false" aria-controls="seccion1">
+                            Acceder al Formulario de Compra Extendido
+                        </button>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#seccion2" aria-expanded="false" aria-controls="seccion2">
+                            Acceder a la impresion de compra de producto internacional
+                        </button>
+                        <div class="collapse my-2" id="seccion1">
+                            <div class="card card-body">
+                                
+                                
+                                <h1>Formulario de Compra Extendido</h1>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre Completo</label>
+                                        <input type="text" class="form-control" id="nombre_data" placeholder="Escribe tu nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="direccion">Dirección de Envío</label>
+                                        <input type="text" class="form-control" id="direccion_data" placeholder="Escribe tu dirección de envío">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tarjeta">Número de Tarjeta de Crédito</label>
+                                        <input type="text" class="form-control" id="tarjeta_data" placeholder="Ingresa el número de tu tarjeta">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="ciudad">Ciudad</label>
+                                            <input type="text" class="form-control" id="ciudad_data">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="codigoPostal">Código Postal</label>
+                                            <input type="text" class="form-control" id="codigoPostal_data">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="opcionesPago">Opciones de Pago</label>
+                                        <select class="form-control" id="opcionesPago_data">
+                                            <option>Selecciona una opción</option>
+                                            <option>Tarjeta de Crédito</option>
+                                            <option>PayPal</option>
+                                            <option>Transferencia Bancaria</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary my-2">Realizar Compra</button>
+                                </form>
+
+
+                            </div>
+                        </div>
+                        <div class="collapse my-2" id="seccion2">
+                            <div class="card card-body">
+                                
+                                
+                                <h1 class="d-print-none">Formato de Compra de Producto Internacional</h1>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="nombre">Nombre del Comprador</label>
+                                                <input type="text" class="form-control" id="nombre_datos" placeholder="Nombre completo del comprador">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="direccion">Dirección de Envío</label>
+                                                <input type="text" class="form-control" id="direccion_datos" placeholder="Dirección de envío completa">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="pais">País de Destino</label>
+                                                <input type="text" class="form-control" id="pais_datos" placeholder="País de destino del producto">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="producto">Descripción del Producto</label>
+                                                <textarea class="form-control" id="producto_datos" rows="4" placeholder="Descripción detallada del producto"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cantidad">Cantidad</label>
+                                                <input type="number" class="form-control" id="cantidad_datos" placeholder="Cantidad de productos">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="precio">Precio por Unidad</label>
+                                                <input type="text" class="form-control" id="precio_datos" placeholder="Precio por unidad del producto">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary d-print-none" type="button" onclick="window.print()">Imprimir Formulario</button>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+              
+
+
+
+        </div>
+      </div>
+
+    </div>
+    
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Aplicación Básica</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+    </svg>
+
+
+    <div class="p-3 container my-5">
+      <footer>
+        <div class="row">
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 Aplicación Básica. Todos los derechos reservados.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    </body>
+</html>
