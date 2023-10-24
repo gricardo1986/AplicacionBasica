@@ -2,51 +2,169 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación Básica</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .jumbo {
+        background-image: url(./public/img/portada-portatiles.jpg);
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+      }
+      .col-md-4 {
+        text-align: center;
+        display: flex;
+      }
+      .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      img{
+        width: 150px;
+        height: 250px;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
 
+
+
     <div class="container my-5">
-      <div class="p-5 text-center bg-body-tertiary rounded-3">
-        <h1 class="text-body-emphasis">Aplicación Básica</h1>
+
+
+      <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <a class="navbar-brand" href="#">Aplicación Básica</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
+        </ol>
+      </nav>
+
+
+      <div class="jumbo p-5 text-center bg-body-tertiary rounded-3">
+        <h1>Aplicación Básica</h1>
         <p class="lead">
           Ésta es una Aplicación Básica
         </p>
       </div>
+
     </div>
 
     <div class="container my-5">
-      <div class="p-3 row">
-        <div class="col-md-12">
 
-          <h2>Producto Uno</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          
-          <h2>Producto Dos</h2>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          
-          <h2>Producto Tres</h2>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="p-3 row d-flex justify-content-between">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./public/img/195161584251-001-750Wx750H.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 1</h5>
+                    <p class="card-text">Descripción del Producto 1.</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-success">
+                      <span class="oi oi-arrow-circle-right" title="next" aria-hidden="true"></span>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./public/img/450_1000.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 2</h5>
+                    <p class="card-text">Descripción del Producto 2.</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-success">
+                      <span class="oi oi-arrow-circle-right" title="next" aria-hidden="true"></span>
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./public/img/images.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 3</h5>
+                    <p class="card-text">Descripción del Producto 3.</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-success">
+                      <span class="oi oi-arrow-circle-right" title="next" aria-hidden="true"></span>
+                  </button>
+                </div>
+            </div>
         </div>
       </div>
 
       <div class="p-3 row d-flex justify-content-between">
         <div class="col-md-4">
-            <h2>Producto Uno</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            <button class="btn btn-info">Más</button>
+          <div class="card">
+              <img src="./public/img/Portatil-HP-EliteBook-830-G8-Core-i5-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Producto 4</h5>
+                  <p class="card-text">Descripción del Producto 4.</p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-success">
+                    <span class="oi oi-arrow-circle-right" title="next" aria-hidden="true"></span>
+                </button>
+              </div>
+          </div>
         </div>
         <div class="col-md-4">
-            <h2>Producto Dos</h2>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="btn btn-info">Más</button>
+            <div class="card">
+                <img src="./public/img/image_content_28623357_20170510145318.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 5</h5>
+                    <p class="card-text">Descripción del Producto 5.</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-success">
+                      <span class="oi oi-arrow-circle-right" title="next" aria-hidden="true"></span>
+                  </button>
+                </div>
+            </div>
         </div>
         <div class="col-md-4">
-            <h2>Producto Tres</h2>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <button class="btn btn-info">Más</button>
+            <div class="card">
+                <img src="./public/img/450_10000.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 6</h5>
+                    <p class="card-text">Descripción del Producto 6.</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-success">
+                      <span class="oi oi-arrow-circle-right" title="next" aria-hidden="true"></span>
+                  </button>
+                </div>
+            </div>
         </div>
       </div>
 
@@ -74,7 +192,7 @@
       <footer>
         <div class="row">
 
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-5 col-md-2 mb-3">
             <h5>Sección</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
@@ -85,7 +203,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-5 col-md-2 mb-3">
             <h5>Sección</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
@@ -96,7 +214,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-5 col-md-2 mb-3">
             <h5>Sección</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
@@ -107,7 +225,7 @@
             </ul>
           </div>
 
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-5 col-md-2 mb-3">
             <h5>Section</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
@@ -118,27 +236,40 @@
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-5 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
               <form>
                   <h5>Ingresa tu Dirección</h5>
-                  <div class="d-flex flex-column flex-sm-column w-50 gap-2">
+                  <div class="d-flex flex-column flex-sm-column w-70 gap-2">
                     <div class="form-group">
                         <label for="street">Calle:</label>
-                        <input type="text" class="form-control" id="street" placeholder="Ingresa la calle">
+                        <input type="text" class="form-control form-control-sm" id="street" placeholder="Ingresa la calle">
                     </div>
                     <div class="form-group">
                         <label for="city">Ciudad:</label>
-                        <input type="text" class="form-control" id="city" placeholder="Ingresa la ciudad">
+                        <input type="text" class="form-control form-control-sm" id="city" placeholder="Ingresa la ciudad">
                     </div>
                     <div class="form-group">
                         <label for="state">Estado:</label>
-                        <input type="text" class="form-control" id="state" placeholder="Ingresa el estado">
+                        <input type="text" class="form-control form-control-sm" id="state" placeholder="Ingresa el estado">
                     </div>
                     <div class="form-group">
                         <label for="zip">Código Postal:</label>
-                        <input type="text" class="form-control" id="zip" placeholder="Ingresa el código postal">
+                        <input type="text" class="form-control form-control-sm" id="zip" placeholder="Ingresa el código postal">
                     </div>
-                    <button type="submit" class="btn btn-primary">Guardar Dirección</button>
+                    <button type="submit" class="btn btn-primary">
+                      <span class="oi oi-map-marker" title="Guardar Dirección" aria-hidden="true"></span>
+                  </button>
                   </div>
               </form>
           </div>
@@ -156,8 +287,9 @@
       </footer>
     </div>
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    
 </body>
 </html>
