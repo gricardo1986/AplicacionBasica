@@ -1,0 +1,47 @@
+#login .modal {
+  background: #f8e918;
+}
+
+#login .modal-content {
+  background: #f8e918;
+  color: #fff;
+}
+
+#login .modal-content .modal-body {
+  margin: 10px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#register .modal {
+  background: #000874;
+}
+
+#register .modal-content {
+  background: #000874;
+  color: #fff;
+}
+
+#register .modal-content .modal-body {
+  margin: 10px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#asesor .modal {
+  background: #00ff00;
+}
+
+#asesor .modal-content {
+  background: #00ff00;
+  color: #fff;
+}
+
+#asesor .modal-content .modal-body {
+  margin: 10px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  color: #333;
+}

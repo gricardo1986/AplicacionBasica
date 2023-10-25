@@ -4,7 +4,8 @@
   "description": "Una aplicacion sencilla con bootstrap",
   "main": "index.html",
   "scripts": {
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "author": "Galy Ricardo",
   "license": "ISC",
@@ -13,5 +14,21 @@
     "jquery": "^3.7.1",
     "lite-server": "^2.6.1",
     "open-iconic": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/gulp-uglify": "^3.0.10",
+    "browser-sync": "^2.29.3",
+    "del": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-rev": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.4"
   }
 }

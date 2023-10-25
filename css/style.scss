@@ -1,0 +1,44 @@
+$yellow: #f8e918;
+$blue: #000874;
+$green: #00ff00;
+$textcolor: #fff; 
+
+@mixin estilos-comunes {
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#login .modal{
+    background: $yellow;
+}
+#login .modal-content{
+    background: $yellow;
+    color: $textcolor;
+}
+#login .modal-content .modal-body{
+    @include estilos-comunes;
+}
+
+#register .modal{
+    background: $blue;
+}
+#register .modal-content{
+    background: $blue;
+    color: $textcolor;
+}
+#register .modal-content .modal-body{
+    @include estilos-comunes;
+}
+
+#asesor .modal{
+    background: $green;
+}
+#asesor .modal-content{
+    background: $green;
+    color: $textcolor;
+}
+#asesor .modal-content .modal-body{
+    @include estilos-comunes;
+}
